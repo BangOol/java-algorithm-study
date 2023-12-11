@@ -70,6 +70,12 @@ public class P1 {
         return result;
     }
 
+    // replaceAll() 메서드를 이용하여 문자열 처리.
+    public boolean isPalindrome3(String string) {
+        String filtered = string.toLowerCase().replaceAll("[^a-z]", "");
+        String reversed = new StringBuilder(filtered).reverse().toString();
+        return filtered.equals(reversed);
+    }
 
 }
 
